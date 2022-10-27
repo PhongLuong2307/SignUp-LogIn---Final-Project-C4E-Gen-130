@@ -58,13 +58,14 @@ header {
 
 .logIn-btn {
     width: 80px;
-    height: 35px;
+    height: 33px;
     align-self: flex-end;
     background-color: #22a6b3;
     color: #fff;
     cursor: pointer;
     border: none;
     transition: all 0.2s ease;
+    margin-bottom: 18px;
 }
 
 .logIn-btn:hover {
