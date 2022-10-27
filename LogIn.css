@@ -1,0 +1,268 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,body {
+    margin: 0;
+    font-family: Montserrat;
+}
+
+a {
+    text-decoration: none;
+    color: #212529;
+}
+
+h1, h2, h3 {
+    font-family: 'Raleway';
+    margin-bottom: 20px;
+}
+
+header {
+    height: 120px;
+    width: 100%;
+    padding: 15px 90px 15px 60px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #cfcfcf;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    height: 58px;
+}
+
+.logIn-email-container, .logIn-password-container {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+.logIn-form {
+    display: flex;
+}
+
+.logIn-label {
+    margin-bottom: 10px;
+}
+
+.logIn-input {
+    font-size: 15px;
+    width: 250px;
+    height: 30px;
+    padding: 0px 5px;
+    box-sizing: border-box;
+    margin-bottom: 5px;
+}
+
+.logIn-btn {
+    width: 80px;
+    height: 35px;
+    align-self: flex-end;
+    background-color: #22a6b3;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.logIn-btn:hover {
+    opacity: 0.75;
+}
+
+.logIn-btn:active {
+    opacity: 1;
+}
+
+.logIn-footer-text-container {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.logIn-errorText, .signUp-errorText, .userName-errorText {
+    font-size: 13px;
+    color: red;
+    width: 270px;
+    height: 15px;
+}
+
+.forgotAccount {
+    font-size: 13px;
+    color: rgb(161, 161, 161);
+    cursor: pointer;
+    height: 15px;
+
+}
+
+.forgotAccount:hover {
+    color: #22a6b3;
+}
+
+.forgotAccount:active {
+    color: #1c8a94;
+}
+
+.content {
+    display: flex;
+}
+
+.leftSide-slogan-container {
+    /* border: 1px solid black; */
+    width: 50vw;
+    height: 83.2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #fff;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.4), 
+        rgba(0, 0, 0, 0.4)
+      ), url("https://thebootstrapthemes.com/previews/travel-agency-booking/wp-content/uploads/sites/48/2017/10/pexels-photo1-1.jpg");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.sloganText {
+    width: 60%;
+    letter-spacing: 2px;
+}
+
+.signUp-form-container {
+    /* border: 1px solid black; */
+    width: 50vw;
+    padding: 10px 100px 0px 60px;
+    box-sizing: border-box;
+}
+
+.signUp-item-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.signUp-label {
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+.signUp-input {
+    border: none;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.signUp-btn {
+    width: 200px;
+    height: 45px;
+    align-self: flex-end;
+    background-color: #22a6b3;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.signUp-btn:hover {
+    opacity: 0.75;
+}
+
+.signUp-btn:active {
+    opacity: 1;
+}
+
+.material-icons-outlined {
+    color: grey;
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 35px;
+}
+
+#signUp-errorText {
+    margin-top: -20px;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width: 1060px) {
+    .logIn-input {
+        width: 200px;
+    }
+
+    .logIn-btn {
+        width: 70px;
+        height: 30px;
+    }
+
+    .logIn-errorText {
+        width: 220px;
+    }
+
+    label {
+        font-size: 15px;
+    }
+
+    .sloganText {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 930px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        border: none;
+    }
+
+    .header__logo {
+        margin-bottom: 30px;
+    }
+
+    .logIn-form {
+        flex-direction: column;
+    }
+
+    .logIn-errorText {
+        margin-bottom: 5px;
+    }
+
+    .logIn-input {
+        width: 300px;
+    }
+
+    .logIn-btn {
+        align-self: flex-start;
+        margin-top: 10px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .leftSide-slogan-container {
+        width: 100%;
+        height: 40vh;
+        margin-top: 20px;
+    }
+
+    .signUp-form-container {
+        width: 100%;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .signUp-form-container {
+        padding: 30px;
+    }
+}

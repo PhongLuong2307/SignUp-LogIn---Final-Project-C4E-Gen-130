@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon"
+        href="http://icons.iconarchive.com/icons/custom-icon-design/flatastic-5/512/Insert-hyperlink-icon.png"
+        type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/LogIn.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <img class="header__logo"
+            src="https://thebootstrapthemes.com/previews/travel-agency-booking/wp-content/uploads/sites/48/2021/05/travel-agency-booking-logo.png" />
+        <div class="logIn-form-container">
+            <form class="logIn-form" action="">
+                <div class="logIn-email-container">
+                    <label class="logIn-label" for="logIn-email">Username</label>
+                    <input class="logIn-input" type="text">
+                    <div class="logIn-errorText" id="logIn-errorText"></div>
+                </div>
+                <div class="logIn-password-container">
+                    <label class="logIn-label" for="logIn-password">Password</label>
+                    <input class="logIn-input" type="password">
+                    <div class="forgotAccount">Forgotten account?</div>
+                </div>
+                <input class="logIn-btn" type="button" value="Log In">
+            </form>
+
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="leftSide-slogan-container">
+            <h2 class="sloganText">Travel All Around The World With Travel Agency Booking.</h2>
+        </div>
+        <div class="signUp-form-container">
+            <h1>Create An Account</h1>
+            <h3>It's free and always will be</h3>
+            <form class="signUp-form" action="">
+                <div class="signUp-item-container">
+                    <label class="signUp-label" for="signUp-username">Username <span style="color: red;">*</span></label>
+                    <input class="signUp-input" id="signUp-username" type="text">
+                </div>
+                <div style="margin-top: -20px; margin-bottom: 10px;" class="userName-errorText" id="userName-errorText"></div>
+                <div class="signUp-item-container">
+                    <label class="signUp-label" for="signUp-username">Account Name </label>
+                    <input class="signUp-input" id="signUp-username" type="text">
+                </div>
+                <div class="signUp-item-container">
+                    <label class="signUp-label" for="signUp-username">Password <span style="color: red;">*</span></label>
+                    <input id="signUp-Password" class="signUp-input" type="password">
+                    <span id="showPassword" class="material-icons-outlined">visibility</span>
+                </div>
+                <div class="signUp-item-container">
+                    <label class="signUp-label" for="signUp-username">Confirm Password <span style="color: red;">*</span></label>
+                    <input id="signUp-ConfirmPassword" class="signUp-input" type="password">
+                    <span id="showConfirmPassword" class="material-icons-outlined">visibility</span>
+                </div>
+                <div class="signUp-errorText" id="signUp-errorText"></div>
+                <input class="signUp-btn" type="button" value="Sign Up" onclick="signUpError()">
+            </form>
+        </div>
+    </div>
+    <script src="/LogIn.js"></script>
+</body>
+
+</html>
